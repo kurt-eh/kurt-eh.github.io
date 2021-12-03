@@ -887,8 +887,7 @@ footer{
 }
 /*  ===================================== LARGE  ===================================== */
 @media screen  and (max-width:1200px)  { 
-    
-
+ 
     .dawn{
         margin-right:10px;
     }
@@ -1090,7 +1089,8 @@ footer{
     
    
     #divNV2{
-        width: 85%;
+        width: 80%;
+        height: 35vw;
     }
     .LRP img{
         width:80vw;
@@ -1213,10 +1213,7 @@ footer{
     } 
     .text {
         font-size: 3.5vw;
-    }    
-    #divNV2{
-        width:90%;
-    }
+    }  
     #genPic{
         width:200px;
     }
