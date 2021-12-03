@@ -124,6 +124,7 @@ body{
 }
 .listenHere img{
     margin: 12px;
+    height: 1em;
 }
 #speciesDivText{
     grid-area:spc; 
