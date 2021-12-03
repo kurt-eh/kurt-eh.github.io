@@ -840,9 +840,6 @@ footer{
     margin-left:1em; 
 }
 
-#hoverToExpand{
-    display:none;
-}
 /* =====================================MEDIA RULES ===================================== */
 /* ===================================== TOUCHSCREENS ===================================*/
 /*https://ferie.medium.com/detect-a-touch-device-with-only-css-9f8e30fa1134*/
@@ -1031,6 +1028,7 @@ footer{
     }
     .footerLine{    
         font-size: 0.65em;
+        width:95%;
     }
     .social{
         font-size:18px;
@@ -1291,60 +1289,13 @@ footer{
         td:nth-of-type(5):before{content:"Synopsis";}
     /*used above code to rotate table for portrait mode phones: 
     https://css-tricks.com/responsive-data-tables/ */
-    .footerLine{
-        height:2.5em;
-    }
-    .footerLine:hover{
-        height:8.5em;
-        margin-bottom:0;
-    }
-    #hoverToExpand{
-        display:block;
-        font-weight:bolder;
-        font-size:2em;
-    }
-    #hiddenFooter{
-        display:none;
-    }
-    .footerLine:hover #hoverToExpand{
-        display:none;
-    }
-    .footerLine:hover #hiddenFooter{
-        display:block;
-    }
+    
 } 
 /* ========================= tiny ============= */
 @media screen and (max-width:300px) {    
     .navText{
         font-size: 0.65em;
     }
-    .footerLine{
-        font-size:0.5em;
-    }
 }
 
 
-/*=================phone/landscape=================*/
-@media screen and (max-height:450px) {
-    .footerLine{
-        height:2.5em;
-    }
-    .footerLine:hover{
-        height:8.5em;
-        margin-bottom:0;
-    }
-    #hoverToExpand{
-        display:block;
-        font-weight:bolder;
-        font-size:2em;
-    }
-    #hiddenFooter{
-        display:none;
-    }
-    .footerLine:hover #hoverToExpand{
-        display:none;
-    }
-    .footerLine:hover #hiddenFooter{
-        display:block;
-    }
-}
