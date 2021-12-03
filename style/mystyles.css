@@ -520,17 +520,21 @@ text-align:center;
 }
 @keyframes dinoAttack {
     0%{width: 100%;}
-    /* 10%{width: 95%;
-        transform:translate(-60%)} */
     96%{
         width: 3000px;
         left:0px;
         transform:translate(-70%, -50%);
+        -webkit-transform:translate(-70%, -50%);
+        -moz-transform:translate(-70%, -50%);
+
     }
     100%{
         width: 3000px;
         left:0px;
         transform:translate(-70%, -35%);
+        -webkit-transform:translate(-70%, -35%);
+        -moz-transform:translate(-70%, -35%);
+
     }
     
 }
@@ -1185,11 +1189,17 @@ footer{
             width: 3000px;
             left:0px;
             transform:translate(-70%, -50%);
+            -webkit-transform:translate(-70%, -50%);
+            -moz-transform:translate(-70%, -50%);
+
         }
         100%{
             width: 3000px;
             left:0px;
             transform:translate(-70%, -35%);
+            -webkit-transform:translate(-70%, -35%);
+            -moz-transform:translate(-70%, -35%);
+
         }
     }
     
