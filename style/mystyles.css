@@ -529,7 +529,6 @@ text-align:center;
         transform:translate(-70%, -50%);
         -webkit-transform:translate(-70%, -50%);
         -moz-transform:translate(-70%, -50%);
-
     }
     100%{
         width: 3000px;
@@ -537,9 +536,7 @@ text-align:center;
         transform:translate(-70%, -35%);
         -webkit-transform:translate(-70%, -35%);
         -moz-transform:translate(-70%, -35%);
-
-    }
-    
+    }    
 }
 @-webkit-keyframes move{
      0%{width: 100%;}
@@ -548,13 +545,13 @@ text-align:center;
         left:0px;
         -webkit-transform:translate(-70%, -50%);
         -moz-transform:translate(-70%, -50%);
-
     }
     100%{
         width: 3000px;
         left:0px;
         -webkit-transform:translate(-70%, -35%);
         -moz-transform:translate(-70%, -35%);
+    }
 }
 .theGFL{
     animation-name: GFLtitles;
@@ -1209,7 +1206,6 @@ footer{
             transform:translate(-70%, -50%);
             -webkit-transform:translate(-70%, -50%);
             -moz-transform:translate(-70%, -50%);
-
         }
         100%{
             width: 3000px;
@@ -1217,25 +1213,23 @@ footer{
             transform:translate(-70%, -35%);
             -webkit-transform:translate(-70%, -35%);
             -moz-transform:translate(-70%, -35%);
-
         }
     }
-@-webkit-keyframes move{
-     0%{
-            width: 115%;
-        }
+@-webkit-keyframes move
+    {
+        0%{width: 115%;}
         96%{
             width: 3000px;
             left:0px;
             -webkit-transform:translate(-70%, -50%);
             -moz-transform:translate(-70%, -50%);
-
         }
         100%{
             width: 3000px;
             left:0px;
             -webkit-transform:translate(-70%, -35%);
             -moz-transform:translate(-70%, -35%);
+        }
     }
     
     
