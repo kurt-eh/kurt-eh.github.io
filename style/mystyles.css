@@ -568,7 +568,6 @@ text-align:center;
 }
 #divNV2{
     width: 680px;
-    height: 14em;
     display:flex;
     grid-area:nv2;
     margin-left:auto;
@@ -888,9 +887,6 @@ footer{
 /*  ===================================== LARGE  ===================================== */
 @media screen  and (max-width:1200px)  { 
     
-#divNV2{
-    width: 680px;
-}
 
     .dawn{
         margin-right:10px;
