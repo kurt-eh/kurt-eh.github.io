@@ -517,9 +517,6 @@ text-align:center;
     animation-timing-function: cubic-bezier(.28,.03,1,-0.07);
     animation-iteration-count: infinite; 
     animation-duration:8s;
-
-    -webkit-animation: move 8s infinite;
-    -webkit-animation-timing-function: cubic-bezier(.28,.03,1,-0.07);
 }
 @keyframes dinoAttack {
     0%{width: 100%;}
@@ -529,6 +526,7 @@ text-align:center;
         transform:translate(-70%, -50%);
         -webkit-transform:translate(-70%, -50%);
         -moz-transform:translate(-70%, -50%);
+
     }
     100%{
         width: 3000px;
@@ -536,22 +534,9 @@ text-align:center;
         transform:translate(-70%, -35%);
         -webkit-transform:translate(-70%, -35%);
         -moz-transform:translate(-70%, -35%);
-    }    
-}
-@-webkit-keyframes move{
-     0%{width: 100%;}
-    96%{
-        width: 3000px;
-        left:0px;
-        -webkit-transform:translate(-70%, -50%);
-        -moz-transform:translate(-70%, -50%);
+
     }
-    100%{
-        width: 3000px;
-        left:0px;
-        -webkit-transform:translate(-70%, -35%);
-        -moz-transform:translate(-70%, -35%);
-    }
+    
 }
 .theGFL{
     animation-name: GFLtitles;
@@ -1206,6 +1191,7 @@ footer{
             transform:translate(-70%, -50%);
             -webkit-transform:translate(-70%, -50%);
             -moz-transform:translate(-70%, -50%);
+
         }
         100%{
             width: 3000px;
@@ -1213,25 +1199,9 @@ footer{
             transform:translate(-70%, -35%);
             -webkit-transform:translate(-70%, -35%);
             -moz-transform:translate(-70%, -35%);
+
         }
     }
-@-webkit-keyframes move
-    {
-        0%{width: 115%;}
-        96%{
-            width: 3000px;
-            left:0px;
-            -webkit-transform:translate(-70%, -50%);
-            -moz-transform:translate(-70%, -50%);
-        }
-        100%{
-            width: 3000px;
-            left:0px;
-            -webkit-transform:translate(-70%, -35%);
-            -moz-transform:translate(-70%, -35%);
-        }
-    }
-    
     
     #mainPanel{
         margin-top: 6em;
@@ -1338,5 +1308,4 @@ footer{
         font-size: 0.65em;
     }
 }
-
 
