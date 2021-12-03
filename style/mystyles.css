@@ -567,7 +567,7 @@ text-align:center;
     
 }
 #divNV2{
-    width: 100%;
+    width: 680px;
     height: 14em;
     display:flex;
     grid-area:nv2;
