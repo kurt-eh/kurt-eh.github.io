@@ -170,6 +170,7 @@ body{
 #clipart{
     border-radius: 100px;
     animation: rotation 60s infinite linear;
+    shape-outside: circle();
 }
 @keyframes rotation { 
     from {
