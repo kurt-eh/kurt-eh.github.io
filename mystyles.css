@@ -1,0 +1,1311 @@
+*{
+    margin-top:0;
+}
+.idScroll{
+    scroll-margin-top:5em;
+}
+.idScroll2{
+    scroll-margin-top:10em;
+}
+@font-face {
+    font-family: MarsPolice;
+    src: url(../style/fonts/marspolice.ttf);
+    /*font source: https://www.dafont.com/
+    Code from W3 Schools*/
+}
+@font-face {
+    font-family: Wanted;
+    src: url(../style/fonts/Wanted\ M54.ttf);
+    /*font source: https://www.dafont.com/
+    Code from W3 Schools*/
+}
+#longest{
+    margin-top:1em;
+}
+.LRP{
+
+    width:48%;
+    display:inline-block;
+    vertical-align:middle;
+}
+.LRP img{
+    width:100%;
+}
+.lrpText{
+    margin-left: 10px;
+}
+.imageLRP{    
+    margin-right:10px;
+    width: 100%;
+    text-align:center;
+}
+.imageLRP img{
+    width: 75%;
+}
+.LRP h2{
+    font-size: 3em;
+}
+body{
+    height:100%; 
+    background-color: orange;
+    margin:0;
+    top:0;
+}
+.wanted{
+    font-family: Wanted;
+}
+.wrapper{  
+    position:relative;
+    top:0px;
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-areas: 
+                        "sd dn dn dn sf sf sf ."
+                        "sd mn mn mn mn mn mn .";
+}
+.wrapper2{  
+    position:relative;
+    top:0px;
+    margin-top:0;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-areas: 
+                        "sd mn mn mn mn mn mn  .";
+}
+.wrapper3{
+    position:relative;
+    top:0px;
+    margin-top:0;
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-areas:
+                        "sd mn mn mn mn mn mn ."
+                        "sd gl ti ti ti ti ti ."
+                        "sd r1 r2 r2 s1 s2 s2 ."
+                        "sd a1 a1 a2 m1 m1 m2 ."
+                        "sd c1 c2 c2 g1 g2 g2 ."
+                        "sd n1 n1 n1 nv2 nv2 nv2 ."
+                        "sd n3 n3 n3 n3 n3 n3 ."                        
+                        "sd gt gt gt ap ap ap .";
+}
+#speciesDiv{
+    margin-top:1em;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows:minmax(2em, auto);
+    grid-template-areas:
+    "ttl ttl ttl ttl"
+    "pic txt txt txt"
+    "snv snv snv snv "
+    "spc spc spc spc" 
+}
+#speciesTitle{
+    grid-area:ttl;
+}
+.listenHereDiv{
+    height:1.25em;
+    width:max-content;
+    background-color:white;
+    border: 1px solid black;
+    font-size: 18px;
+    vertical-align: middle;
+    border-radius:5px;  
+    
+      
+}
+.listenHere{
+    height: 1em;  
+}
+.listenHere img{
+    margin: 12px;
+    height: 1em;  
+}
+#speciesDivText{
+    grid-area:spc; 
+}
+#speciesText h2{
+    font-family: 'Inter:we';
+}
+
+#speciesNav{
+    grid-area:snv;
+}
+.smallPanel {
+    margin-top:1em;
+    display: inline-block;    
+    background-position: top;
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:relative;
+}
+.thumb{    
+    width: 4em;
+    height:6em;
+    transition: border;
+}
+.thumb:hover{
+    border: 4px solid black;
+  
+}
+
+#mainPanel{
+    grid-area: pic;
+    background-position: top;
+    background-size:contain;
+    background-repeat:none;
+    opacity:1.0;
+    width: 10em;
+    height:12em;  
+}
+#mainPanelText{    
+    width:80%;
+    grid-area:txt;
+}
+#clipart{
+    border-radius: 100px;
+    animation: rotation 60s infinite linear;
+    shape-outside: circle();
+}
+@keyframes rotation { 
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+.cryptCover{
+    float:right;
+    height: 12em;
+    transition: height 1s ease;
+}
+.cryptCover:hover{
+    height: 15em;
+}
+#keeling{
+    float:left; 
+    width:250px; 
+    margin-right:5px; 
+    transition: width 1s cubic-bezier(.04,1.94,.79,.88);
+}
+#keeling:hover{
+    width: 60%;
+}
+#keelingText{
+    position:absolute;
+    color:goldenrod;
+    font-size:14px;
+}
+#keelingDiv{
+    position:relative;
+}
+.gflTitles{
+    font-family:Wanted;
+    text-decoration-line:underline;   
+}
+.junkies h3{
+    margin-top:0px;
+}
+.gflBig{
+    font-size:2em;
+}
+#poster{
+    float:right; 
+    width:30%;
+    transition: width 1s ease-in-out;
+}
+#poster:hover{
+    width:100%;
+}
+.gflCovers
+{
+    width:10em;
+    transition: width 0.5s ease-in
+}
+.gflCovers:hover
+{
+    width:15em;
+}
+
+.hunterAlienCovers
+{
+    width:7em;
+    transition: width 0.5s ease-in
+}
+.hunterAlienCovers:hover
+{
+    width:8em;
+}
+
+.down{
+   position:relative;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%)
+}
+.bullshit{
+    grid-area:gl;
+}
+.gflLogo{
+    grid-area: gl;
+    width:95%;
+    margin-left:5px;
+    padding-top:7em;
+}
+ .gflLogo img{
+    width:75%;
+    display:inline-block;
+} 
+.roundBorder50{
+    border-radius: 20px;
+    transition: width 1s;
+}
+.roundBorder50:hover{
+    width:100%;
+}
+.titleSpan{    
+    grid-area:ti;
+    padding:5px;
+}
+.text{    
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:1.5vw;
+}
+.rookie1{
+    padding-left:5px;
+    grid-area:r1;
+}
+.rookie2{
+    grid-area:r2;
+}
+.starter1{
+    grid-area:s1;
+}
+.starter2{
+    grid-area:s2;
+    padding-right:5px;
+}
+.allPro1{
+    grid-area:a1;
+}
+.allPro2{    
+    grid-area:a2;
+    text-align:left;
+}
+.MVP1{
+    grid-area:m1;
+}
+.MVP2{
+    grid-area:m2;
+}
+.champion1{
+    padding-left:5px;
+    grid-area:c1;
+}
+.champion2{
+    grid-area:c2;
+}
+.gangster1{
+    grid-area:g1;
+}
+.gangster2{    
+    grid-area:g2;
+}
+.dawn{
+    grid-area:dn;    
+    padding-left:15px;    
+    position:relative; 
+}
+.siggyFans{
+    grid-area:sf;  
+    padding-left:15px;    
+    margin-right:10px;
+}
+.siggyPicDiv
+{
+    float:right;
+    padding-top:1em;
+    position:relative;
+    padding-left:10px;
+}
+.siggyPic
+{
+    height:17em;
+}
+.siggyCaption
+{
+    position: absolute;
+    color:white;
+    font-size:0.5em;
+    bottom: 0em;
+    width:100%;
+    left:50%;
+    transform:translate(-50%);
+    text-align: center;
+    z-index:5;
+}
+header{
+    position:sticky;
+    top:0;
+    margin-top:0;
+    z-index: 100;
+    background-color:black;
+}
+#headerLine{      
+    position:-webkit-sticky;   
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    color:orange;
+}
+nav{
+    padding-bottom:2px;
+}
+nav ul{
+    margin: 0 auto 0 auto; /*put 0 margin on top and centers div on page*/
+    width:100%;
+    list-style-type:none;
+    padding: 0; 
+    text-align:center;
+}
+nav li{
+    display:inline-block; 
+}
+nav li a{    
+    text-decoration: none;
+}
+nav li a:hover{    
+    font-weight:bolder;
+}
+h1{
+    font-size:3em;
+    margin-bottom:0px;
+} 
+dd img{
+    margin-right:5px;
+}
+a{
+    color: teal;
+    text-decoration: none;
+} 
+.xsmall{
+    display:none;
+}
+.junkieFix{
+    margin-top:1em;
+    text-align:center;
+}
+.fixpic{
+    height:1.5em;
+    transition: height 0.5s;
+}    
+.fixpic:hover{
+    height:2em;
+    width:auto;
+}
+.fix{
+    margin-bottom:2px;
+}
+.fix:hover{
+    border:dotted orangered 2px;
+}
+.orangeLink a:link {
+    color: orange;
+}
+.orangeLink a:visited {
+    color:darkorange
+}
+.orangeLink a:hover {
+    color:orangered;
+}
+.orangeLink a:active {
+    color:rgb(243, 65, 65);
+}
+.navOnPage{
+    color: slategray;
+    font-style:oblique;
+}
+p{
+    padding-left:5px;
+}
+.italics{
+    font-style:oblique;
+}
+.bold{
+    font-weight:bolder;
+}
+.wavyLine{
+    text-decoration:underline wavy;
+}    
+.navText{
+    color:orange;
+    text-align: center;
+    font-size:1.25em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.navText p{
+    display:inline-block;
+}
+.fixedSidebar{
+    position:fixed;
+    width: inherit;
+}
+.sidebar{
+    width:12em;
+    background-color: black;
+    grid-area: sd;
+    color:white;
+    text-align:left;
+    font-size:18px; 
+    height:100%;
+    font-family:Arial, Helvetica, sans-serif
+}
+.sidebar hr{
+    margin: 0px 10px 0px 10px;
+    border:1px solid orange;
+}
+.social 
+{    
+    margin-top:1em;
+    text-align:center;
+}
+.left{
+    text-align:left;
+}
+.middle
+{
+text-align:center;
+}
+#sunshineBG{
+    width:100%;
+    height:100%;
+    background-image: url("../images/sunrise.jpg");
+    background-position: top;
+    background-size:cover;
+    position:absolute;
+    opacity: 0.25;
+    }
+.backgroundImageContainer{
+    position:relative;
+    overflow:hidden;
+}
+.backgroundImage{
+    position:absolute;
+    background-position:center;
+    background-size:cover;
+    width:100%; 
+    opacity:0.25; 
+}
+.onTop{
+    z-index:50;
+}
+.cover{
+    transition: width 0.5s cubic-bezier(1,.48,1,.35);
+}
+.cover:hover{
+    width: 6em;
+}
+
+#novellasBanner{
+    width:100%;
+    animation-name: dinoAttack;
+    animation-timing-function: cubic-bezier(.28,.03,1,-0.07);
+    animation-iteration-count: infinite; 
+    animation-duration:8s;
+}
+@keyframes dinoAttack {
+    0%{width: 100%;}
+    96%{
+        width: 3000px;
+        left:0px;
+        transform:translate(-70%, -50%);
+        -webkit-transform:translate(-70%, -50%);
+        -moz-transform:translate(-70%, -50%);
+
+    }
+    100%{
+        width: 3000px;
+        left:0px;
+        transform:translate(-70%, -35%);
+        -webkit-transform:translate(-70%, -35%);
+        -moz-transform:translate(-70%, -35%);
+
+    }
+    
+}
+.theGFL{
+    animation-name: GFLtitles;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-duration:5s;
+    opacity: 1 !important;
+}
+@keyframes GFLtitles {
+    0%{
+        color: #060606;
+    }
+    12.5%{
+        color: #151515;
+    }
+    25%{
+        color: #02807D;
+    }
+    50%{
+        color: #095D66;
+    }
+    
+    62.5%{
+        color: #02807D;
+    }
+    
+    75%{
+        color: #151515;
+    }
+    100%{
+        color: #060606;
+    }
+    
+}
+#divNV2{
+    width: 680px;
+    height: 300px;
+    display:flex;
+    grid-area:nv2;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    overflow: hidden;
+    margin-bottom: 2em;
+    border:2px black solid;
+}
+.n3{
+    grid-area:n3;
+    margin-left:10px;
+}
+.n3Pic{
+    display:inline-block;
+}
+.novCovers{
+    width:7vw;
+    height:11.25vw;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+#titleFight{
+    margin-left:15%;
+}
+#titleFight:hover ~ #titleFightText{
+    display:block;
+}
+#detective:hover  ~#detectiveText{
+    display:block;
+}
+#rider:hover ~#riderText{
+    display:block;
+}
+#reporter:hover ~#reporterText{
+    display:block;
+}
+#reef:hover ~#reefText{
+    display:block;
+}
+#stoneWolves:hover ~#stoneWolvesText{
+    display:block;
+}
+.n3Pic:hover ~ #blurb{
+    display:none;
+}
+.novCovers:hover{
+    width:10vw;
+    height:15vw;
+}
+#titleFightText{
+    display:none;
+}
+#detectiveText{
+    display:none;
+}
+#riderText{
+    display:none;
+}
+#reporterText{
+    display:none;
+}
+#reefText{
+    display:none;
+}
+#stoneWolvesText{
+    display:none;
+}
+.nv1{
+    grid-area: n1;
+    font-family: MarsPolice;
+    text-align:center;
+}
+.cover{
+    width:80px;
+}
+ table{
+    border:1.2px solid black;
+}
+th{
+    border:1px solid black;
+}
+td{
+    border:1px solid black;
+} 
+.content{    
+    padding-left:10px;    
+    margin-right:10px;
+    grid-area: mn;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer{
+    text-align:center;
+    position:sticky;  
+    position:-webkit-sticky;
+    bottom:0px;  
+    padding-bottom:5px;
+    z-index:1000;
+    background-color: black;
+}
+.footerLine{ 
+    font-size: 0.75em;
+    padding-left:1.5%;
+    font-family:Arial, Helvetica, sans-serif;
+    color:orange;   
+    z-index: 700;
+    /* height:8.5em;*/
+} 
+.aliens
+{
+    float:left; 
+    width: 15%;
+    margin-bottom:20px;
+    margin-right:10px;
+}
+.under1200{
+    display:none;
+}
+#gflBooks{
+    float:right;
+    width:35%; 
+    border-radius:25px; 
+    padding-top:10px;
+}
+#GFLblock{
+    font-size:4vw;
+} 
+.gen1{
+    text-align:center;
+    grid-area: gt;
+    margin-left:5px;
+    position:relative;
+}
+.alivePromo{
+    grid-area: ap;    
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#aliveVideo{
+    width: 35vw;
+    height: 21vw;
+}
+#sandboxBG{
+    width:100%;
+    height: 25em;
+    position:relative;
+    margin-bottom:10px;
+    }
+#sandbox{
+    width:100%;
+    background-image: url("../images/small/books/Sigler_shorts.jpg");
+    background-position: center;
+    background-size:cover;
+    height:100%;
+    opacity: 0.35;
+    position:absolute;
+    top:0;
+}
+#sandboxText{
+    position:absolute;
+    z-index: 5;
+}
+#containerGen{
+    width:100%;
+    height:20em;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#backgroundGen{
+    width:100%;
+    background-image: url("../images/small/books/Generations.jpg");
+    background-position: center;
+    background-size: cover;
+    height:20em;
+    opacity: 0.5;
+    position: absolute;
+    z-index:0;
+    transition: opacity 0.5s;
+}
+#one{
+    position:absolute;
+    z-index: 5;
+    
+}
+#alive{
+    position:absolute;
+    z-index:5;
+    top:9em;
+}
+#alight{
+    position:absolute;
+    z-index:5;
+    top:9em;
+    left:3em;
+}
+#and{
+    position:absolute;
+    z-index:5;
+    top:9em;
+    left:6.25em;
+}
+#alone{
+    position:absolute;
+    z-index:5;
+    top:9em;
+    left:8em;
+}
+#follow{    
+    position:absolute;
+    z-index:4;
+    top:9em;
+}
+
+#backgroundAlive{
+    width:100%;
+    background-image: url("../images/small/books/alive.jpg");
+    background-position: center;
+    background-size: cover;
+    height:20em;
+    opacity: 0.0;
+    position: absolute;
+    z-index:0;
+    transition: opacity 0.5s;
+}
+#backgroundAlight{
+    width:100%;
+    background-image: url("../images/small/books/alight.jpg");
+    background-position: center;
+    background-size: cover;
+    height:20em;
+    opacity: 0.0;
+    position: absolute;
+    z-index:0;
+    transition: opacity 0.5s;
+}
+#backgroundAlone{
+    width:100%;
+    background-image: url("../images/small/books/alone.jpg");
+    background-position: center;
+    background-size: cover;
+    height:20em;
+    opacity: 0.0;
+    position: absolute;
+    z-index:0;
+    transition: opacity 0.5s;
+}
+#alive:hover ~ #backgroundGen { 
+    opacity: 0.0; 
+}
+#alive:hover ~ #backgroundAlive { 
+    opacity: 0.5; 
+}
+#alight:hover ~ #backgroundGen { 
+    opacity: 0.0; 
+}
+#alight:hover ~ #backgroundAlight { 
+    opacity: 0.5; 
+}
+#alone:hover ~ #backgroundGen { 
+    opacity: 0.0; 
+}
+#alone:hover ~ #backgroundAlone { 
+    opacity: 0.5; 
+}
+#onPageNav{
+    margin-top:1em; 
+    margin-left:1em; 
+}
+
+/* =====================================MEDIA RULES ===================================== */
+/* ===================================== TOUCHSCREENS ===================================*/
+/*https://ferie.medium.com/detect-a-touch-device-with-only-css-9f8e30fa1134*/
+@media (hover:none) and (pointer:coarse){
+    #alive:active ~ #backgroundGen { 
+        background-image: url("../images/small/books/alive.jpg"); 
+    }
+    #alight:active ~ #backgroundGen { 
+        background-image: url("../images/small/books/alight.jpg"); 
+    }
+    #alone:active ~ #backgroundGen { 
+        background-image: url("../images/small/books/alone.jpg"); 
+    }
+    #titleFight:active ~ #titleFightText{
+        display:block;
+    }
+    #detective:active  ~#detectiveText{
+        display:block;
+    }
+    #rider:active ~#riderText{
+        display:block;
+    }
+    #reporter:active ~#reporterText{
+        display:block;
+    }
+    #reef:active ~#reefText{
+        display:block;
+    }
+    #stoneWolves:active ~#stoneWolvesText{
+        display:block;
+    }
+    .n3Pic:active ~ #blurb{
+        display:none;
+    }
+    .novCovers:active{
+        width:10vw;
+        height:15vw;
+    }
+    spacer{
+        margin-right:10px;
+    }
+}
+/*  ===================================== LARGE  ===================================== */
+@media screen  and (max-width:1200px)  { 
+ 
+    .dawn{
+        margin-right:10px;
+    }
+    .centerPic{
+        text-align:center;
+    }
+    .lrpText{
+        text-align:left;
+    }
+    .sidebar{
+        width:100%;
+    }
+    .fixedSidebar{
+        position:relative;
+        height:15em;
+        font-size:18px;
+        display:grid;
+        justify-items: center;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-auto-flow: row;
+    }    
+    .xsmallHide{
+        display:none;
+    }
+    #onPageNav{
+        margin-top:1em;  
+        margin-left:0em;
+    }
+    .alivePromo{  
+        width:100%;
+        position:relative;
+    }
+    #aliveVideo{
+        display:block;
+        width: 75vw;
+        height: 45vw;
+        margin-left:auto;
+        margin-right: auto;
+        
+    }
+    #containerGen{
+        display:block;
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .novCovers{
+        width:15vw;
+        height:22.5vw;
+    }
+    #sandboxBG{
+    height: 32em;
+    }
+    .over1200{
+        display:none;
+    }
+    .under1200{
+        display:block;
+    }
+    .gflLogo img{
+        width:30%;
+    }
+     .gflLogo{
+        padding:2px;
+    } 
+    .text {
+        font-size: 2vw;
+    }
+    .cryptCover{
+        float:right;
+        height: 9em;
+        width: 6em;
+    }
+    .cryptCover:hover{
+        height: 12em;
+        width: 9em;
+    }
+    #GFLblock{
+        font-size: 2em;
+    } 
+    #aliveVideo{
+        margin-bottom:20px;
+    }
+    .wrapper{  
+        width:100%;
+        height:100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+                            "dn dn "
+                            "sf sf "
+                            "mn mn "
+                            "sd sd ";
+    }
+    .wrapper2{  
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+                            "mn mn "
+                            "sd sd ";
+    }   
+    .wrapper3{  
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        "mn mn mn mn"
+        "gl gl gl gl"
+        "ti ti ti ti"
+        "r1 r2 r2 r2"
+        "s1 s2 s2 s2"
+        "a1 a1 a1 a2" 
+        "m1 m1 m1 m2"
+        "c1 c2 c2 c2" 
+        "g1 g2 g2 g2"                            
+        " . n1 n1  ."
+        "nv2 nv2 nv2 nv2"
+        "n3 n3 n3 n3"
+        "gt gt gt gt"
+        "ap ap ap ap"
+        "sd sd sd sd";
+    }
+    .headerLine{
+        max-height:auto;
+    }   
+    #titleFight{
+        margin-left:0;
+    }
+    .siggyPic
+    {
+        height:20em;
+    }
+    .aliens
+    {
+        width: 20%;;
+    }
+    h2{
+        font-size:3.5vw;
+    }
+    h3{
+        font-size:3.25vw;
+    }     
+    h4{
+        font-size:20px;
+    }
+    .footerLine{    
+        font-size: 0.65em;
+        width:95%;
+    }
+    .social{
+        font-size:18px;
+    }  
+    .fixpic:hover{
+        height:2.5em;
+    }
+    .backgroundImage{
+        padding-top:1.5em;
+        position:static;
+        width:90%;
+        opacity:1;
+    }      
+}
+/* ===================================== MEDIUM  ===================================== */
+@media screen  and (max-width:992px) {       
+    .LRP{
+        width:100%;
+    }
+    .LRP img{
+        width:60%;
+    }
+    .cryptCover{
+        float:left;
+    }
+    #gflBooks{
+        float:none;
+        width:55%; 
+        padding-top:10px;
+    }        
+    #GFLblock{
+        font-size: 2em;
+    } 
+    .under1200{
+        display:block;
+    }
+    .text {
+        font-size: 2.5vw;
+    }
+    .aliens
+    {
+        width: 25%;
+    }
+    h2{
+        font-size:5vw;
+    }
+    h3{
+        font-size:4vw;
+    }     
+    #sandboxBG{
+        height: 40em;
+        }
+}
+/*  =====================================  SMALL  ===================================== */
+@media screen and (max-width:768px)  { 
+    
+   
+    #divNV2{
+        width: 80%;
+        height: 35vw;
+    }
+    .LRP img{
+        width:80vw;
+        height:44vw;
+    }
+    #onPageNav{
+        display:none;
+    }
+    .under1200{
+        display:block;
+    }
+    #mainPanelText{
+        width: 80%;
+    }
+    /* #mainPanel{
+        margin-bottom:2.5em;
+    } */
+.listenHereDiv{
+    height:1.25em;
+    width:max-content;
+    background-color:white;
+    border: 1px solid black;
+    font-size:12px;
+    vertical-align: middle;
+    border-radius:5px;    
+}    
+    
+#keeling:hover{
+    width:100%;
+}
+
+    .cryptCover{
+        float:left;
+    }
+    #GFLblock{
+        font-size: 3em;
+    } 
+    .text {
+        font-size: 3vw;
+    
+    }
+    #aliveVideo{
+        padding-top:20px;
+    }
+    .social{
+        width:50%;
+       position: absolute;
+       font-size:12px;
+       top:0px;
+       left:0;
+    }
+    .junkieFix{
+        width:50%;
+       position:absolute;
+       top:0px;
+       left:50%;
+    }
+    #poster{
+        width:40%;
+    }
+    h1{
+        font-size:2.5em;
+    }
+    h2{
+        font-size:3.5vw;
+    }
+    h3{
+        font-size:3.25vw;
+     }    
+    .navText{
+        font-size: 0.75em;
+    }
+    spacer{
+        padding-right:220px;
+    }
+    .xsmall{
+        display:block;
+    }
+}
+/* ===================================== PHONE / EXTRA SMALL ===================================== */
+@media screen and (max-width:576px) {  
+    .navText{
+        font-size: 0.75em;
+    }
+    #novellasBanner{
+        width:115%;
+    }
+    @keyframes dinoAttack {
+        0%{
+            width: 115%;
+        }
+        96%{
+            width: 3000px;
+            left:0px;
+            transform:translate(-70%, -50%);
+            -webkit-transform:translate(-70%, -50%);
+            -moz-transform:translate(-70%, -50%);
+
+        }
+        100%{
+            width: 3000px;
+            left:0px;
+            transform:translate(-70%, -35%);
+            -webkit-transform:translate(-70%, -35%);
+            -moz-transform:translate(-70%, -35%);
+
+        }
+    }
+    
+    #mainPanel{
+        margin-top: 6em;
+    }        
+    #speciesNav{
+        grid-area:txt;
+        text-align:center;
+    }
+    #speciesDivText{
+        margin-top:2em;
+        grid-area:ttl;
+    }
+    
+    #mainPanelText{
+        grid-area:snv;
+        position:relative;
+        bottom:20%;
+    } 
+    .text {
+        font-size: 3.5vw;
+    }  
+    #genPic{
+        width:200px;
+    }
+    .gflCovers
+    {
+        width:4.5em;
+    }
+    #GFLblock{
+        font-size: 2em;
+    }    
+    #gflBig{
+        font-size:2em;
+    }
+    .aliens
+    {
+       width:30%;
+    }
+    h1{
+        font-size:1.65em;
+    }
+    h2{
+        font-size:6vw;
+    }
+    h3{
+        font-size:4.5vw;
+    }           
+    .content{    
+        font-size: 4vw;
+    }
+    /*I used this code to rotate the table for portrait mode phones: 
+    https://css-tricks.com/responsive-data-tables/ */
+        table, thead, td, tr {
+            display:block;
+        }
+        th{
+            border:1px black dashed;
+        }
+        table{
+            border: 4px solid black;
+        }
+        thead tr{
+            position:absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        tr{
+            border:1px solid black;
+            text-align:left;
+        }
+        td{
+            border:none;
+            border-bottom:1px dashed black;
+            position:relative;
+            padding-left: 25%;
+        }
+        td.noBorderPhone{
+            border-bottom:none;
+        }
+        td.middle{            
+            text-align:left;
+        }
+        td:before{
+            text-align:left;
+            position: absolute;
+            top:2px;
+            left: 6px;
+            width:25%;
+            white-space: nowrap;
+            font-weight:bolder;
+        }
+        td:nth-of-type(1):before{content:"Title";}
+        td:nth-of-type(2):before{content:"Cover";}
+        td:nth-of-type(3):before{content:"Year";}
+        td:nth-of-type(4):before{content:"Series";}
+        td:nth-of-type(5):before{content:"Synopsis";}
+    /*used above code to rotate table for portrait mode phones: 
+    https://css-tricks.com/responsive-data-tables/ */
+    
+} 
+/* ========================= tiny ============= */
+@media screen and (max-width:300px) {    
+    .navText{
+        font-size: 0.65em;
+    }
+}
+
