@@ -513,10 +513,24 @@ text-align:center;
 
 #novellasBanner{
     width:100%;
+    -webkit-animation-name: dinoWebkitAttack 8s cubic-bezier(.28,.03,1,-0.07) infinite;
     animation-name: dinoAttack;
     animation-timing-function: cubic-bezier(.28,.03,1,-0.07);
     animation-iteration-count: infinite; 
     animation-duration:8s;
+}
+@-webkit-keyframes dinoWebkitAttack{
+    0%{width:100%}
+    96%{
+        width: 3000px;
+        left: 0px;        
+        -webkit-transform:translate(-70%, -50%);
+    }
+    100%{
+        width:3000px;
+        left:0px;
+        -webkit-tranform:translate(-70%, -35%);
+    }
 }
 @keyframes dinoAttack {
     0%{width: 100%;}
